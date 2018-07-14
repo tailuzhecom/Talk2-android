@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_msg"
+        android:icon="@drawable/icon_menu_group"
+        android:title="微信" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/contact_list_normal"
+        android:title="通讯录" />
+
+    <item
+        android:id="@+id/navigation_find"
+        android:icon="@drawable/find_normal"
+        android:title="发现" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/profile_normal"
+        android:title="我" />
+
+</menu>

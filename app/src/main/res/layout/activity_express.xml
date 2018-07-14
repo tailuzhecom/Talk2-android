@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.young.talk2.ExpressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:id="@+id/edit_express"
+            android:layout_width="fill_parent"
+            android:layout_height="300dip"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dip"
+            android:layout_margin="36dip"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip"
+            android:singleLine="true"
+            android:hint="请在这里写下你的心情吧~_~"
+            />
+
+        <Button
+            android:id="@+id/confirm_express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/express_btn_shape"
+            android:textColor="@android:color/white"
+            android:text="发表" />
+
+        <Button
+            android:id="@+id/cancel_express"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/express_btn_shape"
+            android:textColor="@android:color/white"
+            android:text="取消" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

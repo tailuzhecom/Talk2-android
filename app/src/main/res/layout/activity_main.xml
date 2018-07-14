@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.young.talk2.MainActivity">
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:itemIconTint="@android:color/holo_green_dark"
+        app:itemTextColor="@android:color/holo_green_dark"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="微信"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/find_imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignTop="@+id/add_imageView"
+                    android:layout_marginEnd="19dp"
+                    android:layout_toStartOf="@+id/add_imageView"
+                    android:src="@drawable/actionbar_search_icon" />
+
+                <ImageView
+                    android:id="@+id/add_imageView"
+                    android:layout_width="35dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/actionbar_add_icon" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+       <FrameLayout
+           android:id="@+id/msg_framelayout"
+           android:layout_width="match_parent"
+           android:layout_height="500dp">
+
+       </FrameLayout>
+
+<!--         <android.support.v7.widget.RecyclerView
+            android:id="@+id/friend_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="466dp"
+            android:layout_centerHorizontal="true" />    -->
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
